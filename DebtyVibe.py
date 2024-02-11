@@ -18,11 +18,11 @@ class MusicPlayer:
         self.track = StringVar()
         self.status = StringVar()
 
-        os.chdir(r"C:\Users\PC\Documents\GitHub\Soundplayer\music")
+        os.chdir(r"..\Soundplayer\music")
         self.songtracks = os.listdir()
         self.song_index = 0
 
-        os.chdir(r"C:\Users\PC\Documents\GitHub\Soundplayer\images")
+        os.chdir(r"..\Soundplayer\images")
         self.images = os.listdir()
 
 
@@ -185,7 +185,7 @@ class MusicPlayer:
         scrol_z.config(command=self.favplaylist.yview)
         self.favplaylist.place(x=3, y=1)
 
-        os.chdir(r"C:\Users\PC\Documents\GitHub\Soundplayer\music")
+        os.chdir(r"..\Soundplayer\music")
         songtracks = os.listdir()
         for track in songtracks:
             self.playlist.insert(END, track)
